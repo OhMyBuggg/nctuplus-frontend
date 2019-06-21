@@ -22,6 +22,7 @@ import * as Scores from 'pages/Scores'
 import PageNotFound from 'pages/PageNotFound'
 import Login from 'pages/Login'
 import { validateToken } from 'api/Controllers/user'
+import Practice from 'pages/Practice'
 
 const mapStateToProps = state => ({ currentUser: state.user.currentUser })
 const mapDispatchToProps = dispatch => ({ validateToken: () => dispatch(validateToken()) })
@@ -122,6 +123,8 @@ const Router = enhance(({ currentUser }) => {
         {/* score route group */}
         <Route path='/scores/import' component={loginOnly(Scores.Import)} />
         <Route path='/scores/gpa' component={loginOnly(Scores.GPA)} />
+
+        <Route exact path='/practice' component={Practice} />
 
         {/* user route group */}
         <Route exact path='/user' component={() => <Redirect to='/user/profile' />} />
