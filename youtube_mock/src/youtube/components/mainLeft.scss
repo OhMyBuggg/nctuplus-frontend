@@ -1,0 +1,33 @@
+// .leftbar {
+//     height: 50rem;
+//     width: 15%;
+//     border: 1px white solid;
+//     background-color:  rgb(26, 26, 26);
+// }
+
+// .block1 {
+//     // position: relative;
+//     // top: 1%;
+//     padding-top: 3%;
+//     padding-bottom: 3%;
+// }
+
+.ui.menu.fixed.leftbar {
+    background-color: rgb(26, 26, 26);
+    margin-top: 44px;
+    overflow-y: auto;
+    padding-bottom: 64px;
+
+    .leftButton {
+        color: white;
+    }
+
+    .leftButton:hover {
+        background: rgb(38, 38, 38);
+    }
+}
+
+
+.side-nav.ui.vertical.menu {
+    width: 17rem;
+  }

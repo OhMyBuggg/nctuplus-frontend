@@ -1,0 +1,59 @@
+.leftButton {
+    // border: 1px pink solid;
+    color: white;
+    // font-size: 12px;
+    // display: flex;
+    // position: relative;
+    // height: 2.1rem; 
+    // vertical-align: middle;
+    // //justify-content: space-around;
+    background-color:  rgb(26, 26, 26);
+    span {
+        i.icon {
+            margin-right: 20px;
+            color: #888888
+        }
+    }
+
+    &.highlight-item {
+        span {
+            font-weight: 600;
+        }
+
+        i.icon {
+            color: white;
+        }
+    }
+}
+
+.leftButton-alignment-container {
+    display: flex;
+    align-items: center;
+  }
+
+// .img {
+//     padding: 2px;
+//     //size: 10px;
+//     position: absolute;
+
+//     left: 5%;
+// }
+
+// .text {
+//     position: absolute;
+//     left: 30%;
+//     border: 1px red solid;
+//     text-align: left;
+//     vertical-align: middle;
+//     //width: 40%;
+//     height: 100%;
+// }
+
+// .text span {
+//     height: 100%;
+//     display: inline-block;
+// }
+
+// .text *{
+//     vertical-align: middle;
+// }

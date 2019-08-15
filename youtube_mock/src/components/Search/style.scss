@@ -1,0 +1,139 @@
+
+@import "~assets/styles/_common";
+
+.searchCourse {
+  margin: auto;
+  .searchBar { width: 212px; }
+
+  .checkbox {
+    margin-left: 10px;
+    vertical-align: 30px;
+  }
+}
+
+.searchPanel {
+  @include media-breakpoint-up(md) {
+    position: relative;
+  }
+
+  @include media-breakpoint-down(sm) {
+    position: fixed;
+  }
+
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 0 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  transition: 0.2s ease-in;
+  margin: 0;
+  z-index: 8;
+
+  .content {
+    position: fixed;
+    top: 56px;
+    left: -300px;
+    bottom: 0;
+    padding: 20px;
+    width: 300px;
+    z-index: 9;
+    padding-bottom: calc(#{$footer-height} + 20px);
+    overflow-y: auto;
+    background: #fff;
+    transition: left 0.2s ease-in;
+
+    .contentHeader {
+      // border :green 1px solid;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: sticky;
+      top: -20px;
+      padding-right: 20px;
+      margin: -20px -20px 10px -20px;
+      z-index: 10;
+      height: 45px;
+      background: #fff;
+      border-bottom: 1px solid #dee2e6;
+
+      i {
+        font-size: 30px;
+        color: #ccc;
+      }
+    }
+  }
+
+  &:global(.show) {
+    overflow: auto;
+    flex: 0 0 300px;
+    width: 300px;
+
+    .content {
+      left: 0;
+    }
+  }
+
+  .panelOpen {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    background: #fff;
+    color: #555;
+    line-height: 50px;
+    text-align: right;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+    padding-right: 20px;
+    border-radius: 0 100px 100px 0;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    z-index: 8;
+
+    &:hover {
+      width: 60px;
+    }
+
+    &:global(.show) {
+      display: none;
+    }
+  }
+
+  .panelClose {
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.2s ease-in;
+
+    @include media-breakpoint-up(md) { display: none; }
+
+    &:global(.show) {
+      opacity: 1;
+      z-index: 8;
+      visibility: visible;
+    }
+  }
+
+  .collegeGroup {
+    padding-bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .college {
+      padding-left: 0;
+      padding-right: 0;
+      width: 50%;
+      border-radius: 0;
+      font-size: 14px;
+      color: #337ab7;
+      outline: none;
+    }
+  }
+}

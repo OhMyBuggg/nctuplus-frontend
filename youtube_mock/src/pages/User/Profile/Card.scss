@@ -1,0 +1,73 @@
+.photo {
+  display: inline-block;
+}
+
+.card {
+  background-color: #e9eaed;
+}
+
+.cardbody {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+
+.cardFooter {
+  font-size: 14px;
+  color: #333;
+}
+
+.cardbtn {
+  width: 90px;
+  height: 31px;
+}
+
+.cardbtntext {
+  width: 85px;
+  color: white;
+}
+
+.cardRight {
+  background-color: #e9eaed;
+}
+
+.cardLeft {
+  width: 50%;
+  background-color: white;
+}
+
+.btnCustomPrimary {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.btnCustomWarning {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+.rightLine {
+  border-right: 1px solid black;
+}
+
+.bottomLine {
+  border-bottom: 1px solid black;
+}
+
+.curriculum {
+  background-color: white;
+}
+
+.tab {
+  // padding-right: 5em;
+}
