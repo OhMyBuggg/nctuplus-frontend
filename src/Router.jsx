@@ -53,7 +53,7 @@ const Router = enhance(({ currentUser }) => {
       <Switch>
 
         {/* index route group */}
-        <Route exact path='/' component={Index} />
+        <Route exact path='/' component={Practice} />
         <Route exact path='/login' component={Login} />
 
         {/* admin bulletin route group */}

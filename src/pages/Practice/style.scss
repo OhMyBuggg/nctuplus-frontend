@@ -1,4 +1,274 @@
+a:link {
+  text-decoration: none !important;
+}
+.Film {
+  height: 100%;
+  width: 10.1vw;
+  background: rgb(250, 250, 250);
+  .FilmPhoto {
+    width: 100%;
+    height: 52%;
+    background-size: contain;
+  }
+  .FilmName {
+    color: rgb(13, 13, 13);
+    width: 100%;
+    height: 24%;
+    font-size: 95%;
+    overflow: hidden;
+    background: rgb(250, 250, 250);
+  }
+  .Owner {
+    color: rgb(110, 110, 110);
+    width: 100%;
+    height: 17%;
+    background: rgb(250, 250, 250);
+    font-size: 80%;
+    margin-top: 2%;
+  }
+}
+.FilmBox {
+  padding-top: 2vh;
+  border-bottom-style: solid;
+  border-bottom: 1%;
+  border-bottom-color: lightgray;
+  width: 63vw;
+  height: 29vh;
+  background: rgb(250, 250, 250);
+  .BoxTitle {
+    width: auto;
+    cursor: pointer;
+    background: rgb(250, 250, 250);
+    font-size: 110%;
+  }
+  .Films {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1%;
+    width: 100%;
+    height: 80%;
+    background: rgb(250, 250, 250);
+  }
+}
 
-.practice {
-  font-weight: border;
+.NewMenuBar {
+  .MenuLine {
+    width: 100%;
+    height: 0.1vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background: rgb(205, 205, 205);
+  }
+  .MenuLogin {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 14%;
+    background: red;
+  }
+  .MenuTitle {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 2%;
+    background: #f5f5f5;
+    padding-left: 15%;
+    font-size: 100%;
+  }
+  //display: none;
+  // visibility: hidden;
+  margin-top: 6.5vh;
+  position: fixed;
+  z-index: 100;
+  width: 11vw;
+  height: 93.5vh;
+  background: #f5f5f5;
+  .MenuItem {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 4vh;
+    background: #f5f5f5;
+    .MenuItemImg {
+      margin-left: 13%;
+      width: 20%;
+      height: 100%;
+      background-size: contain;
+    }
+    .MenuItemTitle {
+      color: black;
+      font-size: 90%;
+      width: 80%;
+      height: 100%;
+      background: #f5f5f5;
+      margin-left: 12%;
+      margin-top: 500%;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.MainPage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(250, 250, 250);
+  .NavBar {
+    position: fixed;
+    border-bottom-style: solid;
+    border-bottom: 1%;
+    border-bottom-color: lightgray;
+    display: flex;
+    width: 100vw;
+    height: 6.5vh;
+    background: white;
+    .MenuIcon {
+      display: flex;
+      justify-content: space-between;
+      width: 25%;
+      height: 87%;
+      background: white;
+      .Menu {
+        cursor: pointer;
+        margin-top: 4.8%;
+        margin-left: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 10%;
+        height: 35%;
+        background: white;
+        .h1 {
+          margin-left: 30%;
+          width: 40%;
+          height: 10%;
+          background: gray;
+        }
+      }
+      .YoutubeIcon {
+        cursor: pointer;
+        padding-top: 1%;
+        //  padding-bottom:2%;
+        font-size: 150%;
+        margin-right: 60%;
+        width: 27%;
+        height: 100%;
+        background: white;
+        //background-image:url("./youtube.png");
+      }
+    }
+
+    .SearchContainer {
+      margin-left: 10%;
+      display: flex;
+      // align-content: center;
+      flex-direction: row;
+      width: 36%;
+      height: 78%;
+      background: white;
+      .SearchBar {
+        border: 0;
+        border-style: solid;
+        border-width: 2px;
+        border-color: lightgray;
+        margin-top: 2.3%;
+        width: 90%;
+        height: 72%;
+        background: white;
+        border-right: none;
+        outline: none;
+        resize: none;
+        font-size: 100%;
+        color: black;
+        ::placeholder {
+          color: gray;
+        }
+      }
+      .SearchIcon {
+        cursor: pointer;
+        //padding:1%;
+        border-left: none;
+        border-style: solid;
+        border-width: 2px;
+        border-color: lightgray;
+        margin-top: 2.3%;
+        width: 10%;
+        height: 72%;
+        background: lightgray;
+      }
+    }
+    .IconContainer {
+      display: flex;
+      padding-left: 18%;
+      padding-right: 1%;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 34%;
+      height: 87%;
+      background: white;
+      .h2 {
+        cursor: pointer;
+        margin-top: 7%;
+        height: 50%;
+        width: 12%;
+        background: white;
+        &:nth-child(5) {
+          margin-top: 5.3%;
+          height: 67%;
+          width: 23%;
+          margin-left: 1%;
+          background: green;
+        }
+      }
+    }
+  }
+  .MenuBar {
+    position: fixed;
+    margin-top: 6.5vh;
+    padding-top: 2vh;
+    padding-bottom: 57vh;
+    padding-left: 0.5vw;
+    height: 93.5vh;
+    width: 4vw;
+    background: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .h3 {
+      cursor: pointer;
+      height: 15%;
+      width: 85%;
+      background: red;
+    }
+  }
+  .FilmContainer {
+    margin-top: 6.5vh;
+    display: flex;
+    flex-direction: coulum;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 17vw;
+    margin-left: 4vw;
+    //background-repeat: repeat-y;
+    width: 96vw;
+    height: fit-content;
+    //background-image: url('http://localhost:8080/src/pages/Practice/film1photo.png');
+    background: rgb(250, 250, 250);
+    .Lin {
+      width: 65.6%;
+      height: 23vh;
+      .Advertisement {
+        margin-top: 2vh;
+        width: 63vw;
+        height: 23vh;
+        background: rgb(250, 250, 250);
+        background-image: url("http://localhost:8080/src/pages/Practice/advertisement.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
