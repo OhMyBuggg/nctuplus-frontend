@@ -1,0 +1,71 @@
+.subChannels {
+    // border: 1px pink solid;
+    color: white;
+    // font-size: 12px;
+    display: flex;
+    // position: relative;
+    // height: 2.1rem; 
+    // vertical-align: middle;
+    justify-content: left;
+    align-content: left;
+    background-color:  rgb(26, 26, 26);
+    //border: 1px red solid;
+    span {
+        .img {
+            margin-right: 20px;
+            color: #888888
+        }
+    }
+
+    &.highlight-item {
+        span {
+            font-weight: 600;
+        }
+
+    }
+}
+
+.subChannels-alignment-container {
+    position: relative;
+    left: -18%;
+    top: -75%;
+    //border: 1px white solid;
+    display: flex;
+    //vertical-align: middle;
+    align-items: center;
+    //justify-content: left;
+    img {
+        position: relative;
+        //left: -20%;
+        height: 30%;
+        width: 30%;
+        border-radius: 100%;
+    }
+  }
+
+// .img {
+//     padding: 2px;
+//     //size: 10px;
+//     position: absolute;
+
+//     left: 5%;
+// }
+
+// .text {
+//     position: absolute;
+//     left: 30%;
+//     border: 1px red solid;
+//     text-align: left;
+//     vertical-align: middle;
+//     //width: 40%;
+//     height: 100%;
+// }
+
+// .text span {
+//     height: 100%;
+//     display: inline-block;
+// }
+
+// .text *{
+//     vertical-align: middle;
+// }

@@ -12,14 +12,22 @@
 //     padding-bottom: 3%;
 // }
 
+.sidebar {
+    display: flex;
+    color: white;
+
+}
+
 .ui.menu.fixed.leftbar {
     background-color: rgb(26, 26, 26);
     margin-top: 44px;
     overflow-y: auto;
     padding-bottom: 64px;
+    //border: 1px yellow solid;
 
-    .leftButton {
+    .leftButton {   
         color: white;
+        height: 6%;
     }
 
     .leftButton:hover {
@@ -28,6 +36,54 @@
 }
 
 
+.ui.menu.fixed.leftbar_2 {
+    background-color: rgb(26, 26, 26);
+    margin-top: 12%;
+    overflow-y: auto;
+    padding-bottom: 64px;
+    //border: 1px blue solid;
+
+    .leftButton {   
+        color: white;
+        height: 6%;
+    }
+
+    .leftButton:hover {
+        background: rgb(38, 38, 38);
+    }
+}
+
+
+.ui.menu.fixed.leftbar_3 {
+    background-color: rgb(26, 26, 26);
+    margin-top: 25%;
+    overflow-y: auto;
+    padding-bottom: 64px;
+    //border: 1px red solid;
+
+    .subChannels {   
+        color: white;
+        height: 6%;
+    }
+
+    .subChannels:hover {
+        background: rgb(38, 38, 38);
+    }
+}
+
+
 .side-nav.ui.vertical.menu {
     width: 17rem;
   }
+
+.sub-title {
+    font-size: 12px;
+    color: lightgray;
+    text-align: left;
+    //border: 1px solid yellow;
+    span {
+        position: relative;
+        left: 15px;
+        //border: 1px white solid;
+    }
+}

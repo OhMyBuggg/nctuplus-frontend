@@ -1,6 +1,7 @@
 import React from 'react';
 import './nav_bar.scss';
-import {Menu} from 'semantic-ui-react'
+import {Form, Input} from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
 import menu_b from '../images/YouTube_menu_buttom.png'
 import logo from '../images/YouTube_logo.png'
 import s_button from '../images/search_button.png'
@@ -13,14 +14,23 @@ import icon5 from '../images/user.png'
 class NavBar extends React.Component {
     render(){
         return(
-            <Menu background="black" borderless className = "navbar" fixed="top">
+            <div className = "navbar" fixed="top">
                 <div className = "navbarLeft">
                     <img src={menu_b} alt = "cant open" className = "menu_b"/>
                     <img src={logo} alt = "cant open" className = "logo"/>
                 </div>      
                 <div className="navbarMiddle">
-                    <input className="search_bar" placeholder=" 搜尋"/>
-                    <img className="button_image" alt="404" src={s_button}/>
+                    <div className="search_bar">
+                        <Form>
+                            <Form.Field>
+                                <Input placeholder='搜尋'
+                                    size='small'
+                                    className="bar"
+                                />
+                            </Form.Field>
+                        </Form>
+                    </div>
+                    <button align-content="center" class="ui icon button" className="search_button"><i aria-hidden="true" class="search icon"></i></button>
                 </div>
                 <div className="navbarRight">
                     <img className="navbarIcons" alt="404" src={icon1}/>
@@ -29,7 +39,7 @@ class NavBar extends React.Component {
                     <img className="navbarIcons" alt="404" src={icon4}/>
                     <img className="navbarIcons" alt="404" src={icon5}/>
                 </div>
-            </Menu>
+            </div>
         )
     }
 }
